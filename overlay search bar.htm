@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.search {
+    height: 5.5rem;
+    font-size: 3.5rem;
+    border: solid black;
+    border-width: 0 0 2px 0;
+    border-radius: 0;
+    outline: none
+}
+.overlayy {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color:white;
+  overflow-y: hidden;
+  transition: 0.4s;
+}
+
+.overlayy-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlayy a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlayy a:hover, .overlayy a:focus {
+  color: black;
+}
+
+.overlayy .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlayy {overflow-y: auto;}
+  .overlayy a {font-size: 20px}
+  .overlayy .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+
+@media (max-width: 1335px){
+.form-control--search {
+    height: 5rem;
+    font-size: 3rem;
+}}
+
+@media (max-width: 830px){
+.form-control--search {
+    height: 4.5rem;
+    font-size: 2.5rem;
+}}
+
+@media (max-width: 690px){
+.form-control--search {
+    height: 4rem;
+    font-size: 2rem;
+}
+.search {
+    font-size: 2.5rem!important;
+}
+}
+
+@media (max-width: 560px){
+.form-control--search {
+    height: 3.5rem;
+    font-size: 1.5rem;
+}
+.search {
+    font-size: 1.5rem!important;
+}
+}
+
+@media (max-width: 372px){
+.form-control--search {
+    height: 3.25rem!important;
+    font-size: 1.25rem!important;
+}
+.search {
+    font-size: 1.5rem!important;
+}
+}
+
+
+@media (max-width: 575.98px){
+    .overlayy a {
+    font-size: 1.5rem;
+}}
+
+@media (max-width: 575.98px){
+    .overlayy a {
+    font-size: 2.5rem;
+}}
+
+@media (max-width: 767.98px){
+    .overlayy a{
+    font-size: 3rem;
+}}
+
+
+#myNav .submit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+/* .w3-animate-left {
+    position: relative;
+    animation: animateleft 2.0s;
+}
+@keyframes w3-animate-left {
+  
+0% {
+    left: -300px;
+    opacity: 0;
+}
+100% {
+    left: 0;
+    opacity: 1;
+}
+} */
+
+
+@media (max-width:320px){
+.overlayy .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 33px;
+}
+}
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlayy">
+  <a href="javascript:void(0)" class="closebtn search__close " onclick="closeNav()">&times;</a>
+  <div class="overlayy-content  .w3-animate-left">
+  <form action="/action_page.php" autocomplete="off">
+  
+  <input type="text" class="form-control search" name="firstname"  
+  placeholder="What are you looking for ?">
+  
+    </form>
+  </div>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;float:right;" onclick="openNav()"><i class="fa fa-search" aria-hidden="true"></i></span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     
+</body>
+</html>

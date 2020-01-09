@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.wrapper{
+    background: #f1f1f1;
+    width: 100%;
+    border-top: 5px solid #d1b792;
+    border-bottom: 5px solid #d1b792;
+    padding-bottom: 1px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 4px;
+}
+.nav li a{
+    display: block;
+    font-size: 18px;
+    padding: 0px 12px 3px 12px;
+    margin: 5px 0;
+    color: #666694;
+    line-height: 12px;
+    border-right: 2px solid #4679BD;
+    text-decoration: none;
+}
+.nav li a:hover{
+    color: darkblue;
+}
+.nav li:last-child a{
+    border-right: none;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+li {
+  padding: 10px;
+}
+
+.custom-border {
+  position: relative;
+}
+
+.custom-border:after {
+  content: " ";
+  position: absolute;
+  border-left: 1px #6c757d solid;
+  top: 35%;
+  right: 0;
+  height: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li class="custom-border">
+    Hello
+  </li>
+  <li class="custom-border">
+    World
+  </li>
+  <li class="custom-border">
+    Foo
+  </li>
+  <li class="custom-border">Bar</li>
+  <li class="custom-border">Baz</li>
+</ul>
+
+
+
+
+
+<div class="wrapper">
+  <div class="container">
+      <ul class="nav">
+          <li><a href="#">My Wishlist</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">My Cart</a></li>
+          <li><a href="#">Login</a></li>
+      </ul>
+  </div>
+</div>
+
+</body>
+</html>

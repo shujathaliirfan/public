@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Bootstrap 4 with Lightbox2 gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css'>
+<style>
+  body {
+	background-color: #16a085;
+	color: #ecf0f1;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<section>
+<div class="container">
+<div class="row justify-content-center text-center my-3">
+<div class="col-12">
+<h3>Lightbox2</h3>
+<p>An example of Bootstrap 4 with Lightbox2 gallery</p>
+</div>
+</div>
+<div class="row justify-content-center text-center">
+<div class="col-md-4 mb-3">
+<a href="http://lokeshdhakar.com/projects/lightbox2/images/image-3.jpg" data-lightbox="gallery" data-title="Cisco">
+<img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" class="img-fluid img-thumbnail" alt="Cisco">
+</a>
+</div>
+<div class="col-md-4 mb-3">
+<a href="https://lokeshdhakar.com/projects/lightbox2/images/image-4.jpg" data-lightbox="gallery" data-title="Almost black metal forest">
+<img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" class="img-fluid img-thumbnail" alt="Almost black metal forest">
+</a>
+</div>
+<div class="col-md-4">
+<a href="https://lokeshdhakar.com/projects/lightbox2/images/image-5.jpg" data-lightbox="gallery" data-title="Unnamed road to nowhere">
+<img src="https://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" class="img-fluid img-thumbnail" alt="Unnamed road to nowhere">
+</a>
+</div>
+</div>
+</div>
+</section>
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js'></script>
+<script id="rendered-js">
+      lightbox.option({
+  'albumLabel': "picture %1 of %2",
+  'fadeDuration': 300,
+  'resizeDuration': 150,
+  'wrapAround': true });
+      //# sourceURL=pen.js
+    </script>
+</body>
+</html>

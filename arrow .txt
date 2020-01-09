@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+
+
+.container{
+  margin: 0 auto;
+  width:1170px;
+}
+
+.top, .popup { 
+  display: inline-block;
+  vertical-align: middle;
+}
+.popup {
+    width: 340px;
+    background: #009688;
+    padding: 10px;
+    border-radius: 1px;
+    color: #FFF;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-right: 55px;
+    font-family: Open Sans;
+}
+.popup:before {
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid #009688;
+    position: absolute;
+    top: 16px;
+    right: -12px;
+}
+
+.top {  background-color:yellow;
+    
+    width:300px;
+    height:300px;
+    border:1px solid #fff;
+    position:relative;
+    overflow:hidden;
+}
+.arrow {
+    border:30px solid #fff;
+    border-bottom:none;
+    border-color: transparent #fff transparent #fff;
+    position:absolute;
+    left:0;
+    bottom:0;
+}
+.arrow:before, .arrow:after {
+    content:'';
+    position:absolute;
+    width:5000px;
+    bottom:0;
+    height:30px;
+    background:#fff;
+}
+.arrow:before {
+    right:30px;
+}
+.arrow:after {
+    left:30px;
+}
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  
+
+
+<div class="popup">
+    Cascading Style Sheets is a style sheet language used for describing
+    the presentation semantics of a document written in a markup language.
+</div>
+<div class="top">
+    <span class="arrow" style="left:40%"></span>
+</div>
+  
+  
+  </div>
+
+</body>
+</html>

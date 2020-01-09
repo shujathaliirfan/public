@@ -1,0 +1,24 @@
+.sale-box span.on_sale {
+    background: #4cb1ca;
+    color: #FFF;
+    display: block;
+    left: -9px;
+    font-size: 1em;
+    padding: 5px 0;
+    position: relative;
+    text-align: center;
+    top: 25px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 140px;
+    z-index: 2;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2892AC;
+}
+
+
+
+

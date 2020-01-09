@@ -1,0 +1,115 @@
+jQuery(document).ready(function(){
+jQuery.ajax({
+    // url:'https://hopechennai.com/blogs/get_blog.php',
+    url:'https://hopechennai.com/blogs/wp-json/wp/v2/posts/?categories=1&per_page=6&_embed',
+    method:'GET',
+    async:false,
+    success:function(data){
+        // alert("success");   
+        
+        var html ="";
+        var num=1;
+        for(var a=0;a<data.length;a+=2){           
+            var post_link = data[a].link;
+            var content = data[a].content.rendered;
+            content = content.split("<p>");
+            content = content.join("");
+            content = content.split("</p>");
+            content = content.join("");
+            content=strip(content);
+
+            if(content.length > 130) 
+            {
+                content = content.substring(0,130);
+                content+="...";
+                content+="<br/>";
+                content+="<a href='"+post_link+"' target='_blank'>Read More</a>";
+            }
+
+           var title = data[a].title.rendered;
+           var img1 = data[a]._embedded['wp:featuredmedia'];
+           if( data[a+1])
+           {
+                var post_link2 = data[a+1].link;
+                var content2 = data[a+1].content.rendered;
+                content2 = content2.split("<p>");
+                content2 = content2.join("");
+                content2 = content2.split("</p>");
+                content2 = content2.join("");
+                content2=     strip(content2);
+
+                if(content2.length > 130) 
+                {
+                    content2 = content2.substring(0,130);
+                    content2+="...";
+                    content2+="<br/>";
+                    content2+="<a href='"+post_link2+"' target='_blank'>Read More</a>";
+                }
+                // console.log(content);            
+                var title2 = data[a+1].title.rendered;
+                var img2 = data[a+1]._embedded['wp:featuredmedia'];
+            }
+     
+            html +=' <li>';
+            html +=' <div class="testimonial-content">';
+            html +=' <div id="blog_ak" class="ba">';
+            html += '<div class="ak_contain_1">';
+
+            if(img1)
+            {
+                var img=img1[0].source_url;
+                html +='<div class="blog_img_con">';
+                html +=' <img class="" src="'+img+'" alt="hope-chennai">';
+                html +='</div>';
+            }
+
+            html +='  <a href="'+data[a].link+'"><h6>'+data[a].title.rendered+'</h6></a>';
+            // html +='  <p id="my_text">'+data[a].content.rendered+'</p>';
+            html +='  <p class="my_text">'+content+'</p>';
+            // html += '<a id="read_more" href="'+data[a].link+'">read more</a>';
+            html +='</div>';
+            html += '<hr>';        
+            
+      
+            if( data[a+1])
+            {
+                html += '<div class="ak_contain_1">';
+
+               if(img2)
+               {                
+                var img21=img2[0].source_url;
+                html +='<div class="blog_img_con">';
+                html +=' <img class="" src="'+img21+'" alt="hope-chennai">';
+                html +='</div>';
+                }
+
+                html +='  <a href="'+post_link2+'"><h6>'+title2+'</h6></a>';
+                html +='  <p class="my_text">'+content2+'</p>';             
+                html += '</div>';
+            }
+
+            html +='     </div>';
+            html +=' </div>';
+            html +='  </li>';
+   
+        } /* Loop End */
+        
+
+    jQuery("#cus").html(html);
+  
+    // console.log(data);
+
+
+    }
+});
+
+  
+
+});
+
+function strip(html)
+{
+   var tmp = document.implementation.createHTMLDocument("New").body;
+   tmp.innerHTML = html;
+   return tmp.textContent || tmp.innerText || "";
+}

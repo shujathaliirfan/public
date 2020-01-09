@@ -1,0 +1,17 @@
+.slider-wrap:after {
+    content: "";
+    width: 100%;
+    height: 240px;
+    /* background: #670b0b; */
+    z-index: 1;
+    bottom: -210px;
+    background-color: #376592;
+    left: 0;
+    position: absolute;
+    -webkit-transform: skewY(-6deg);
+    -ms-transform: skewY(-6deg);
+    transform: skewY(-7deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+}

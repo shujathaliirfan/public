@@ -1,0 +1,18 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<div data-aos="fade-up"></div>
+<div data-aos="fade-down"></div>
+<div data-aos="fade-right"></div>
+<div data-aos="fade-left"></div>
+<div data-aos="fade-up-right"></div>
+<div data-aos="fade-up-left"></div>
+<div data-aos="fade-down-right"></div>
+<div data-aos="fade-down-left"></div>
+<div data-aos="flip-left"></div>
+<div data-aos="flip-right"></div>
+<div data-aos="flip-up"></div>
+<div data-aos="flip-down"></div>
+<div data-aos="zoom-in"></div>
+<div data-aos="zoom-in-up"></div>

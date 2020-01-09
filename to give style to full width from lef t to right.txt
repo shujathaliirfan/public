@@ -1,0 +1,8 @@
+.ui-tabs-nav1:before {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 323vh;
+    left: -100vh;
+    height: 54px;
+}

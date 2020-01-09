@@ -1,0 +1,61 @@
+jQuery(document).ready(function(){
+    
+    /* Ajax Start */
+     
+     var consumer_key = 'ck_92fe7380e7c622ab9526dcd5a113cfa7fec346fc';
+     var consumer_secret = 'cs_2663e336626c67aa8b65b75c2a3a07e32d1e1d3b'; 
+    
+    jQuery.ajax({
+        url:'https://hopechennai.com/blogs/wp-json/wc/v2/products/?consumer_key='+consumer_key+'&consumer_secret='+consumer_secret,
+        method:'GET',
+        async:false,
+        success:function(product){
+       
+            console.log(product);
+            // alert(product.length);
+            var pro = "";
+            for(var a=0; a<product.length; a++)
+            // for(var a=0; a<6; a++)
+            {
+                var product_name = product[a].name;
+                var product_link = product[a].permalink;
+                var description = product[a].description;
+                var short_desc = product[a].short_description;
+                var price = product[a].price;
+                var image = product[a].images[0].src;
+                console.log(product_link);
+                console.log(description);
+                console.log(short_desc);
+                console.log(price);
+                console.log(image);
+                
+                
+                pro += ' <div class="item">';
+                pro += ' <div id="img">';
+                pro += '<a href="'+product_link+'">';
+                pro += ' <img src="'+image+'" alt="">';
+                pro += '</a>';
+                pro += '</div>';
+                pro += '<div class="products-sec">';
+                pro += '<p>'+product_name+'</p>';
+                pro += '<p>&#x20b9; '+price+'</p>';
+                pro += '</div>';
+                pro += '</div>';
+             
+            } 
+            
+            
+            jQuery("#products_ak").html(pro);
+            
+        }
+        
+    });
+    /* Ajax End */
+});
+
+
+
+
+
+
+  

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+ 
+  width: 70%;
+  border-left: none;
+  height: auto;
+}
+
+img {
+  float:left;
+}
+-------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header-secondary-outer {
+    background-color: #ffffff!important;
+}
+
+#header-outer:not([data-lhe="animated_underline"]) header#top nav > ul > li > a:hover, body #header-outer:not(.transparent) #social-in-menu a i:after, #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.sfHover > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav > ul > li > a:hover, header#top #logo:hover, .ascend #header-outer:not(.transparent) .cart-outer:hover .cart-menu-wrap:not(.has_products) .icon-salient-cart, body.material #header-outer:not(.transparent) .cart-outer:hover .cart-menu-wrap .icon-salient-cart, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.sfHover > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current-menu-item > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator i, body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator i, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.sfHover > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current_page_ancestor > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current-menu-ancestor > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current-menu-ancestor > a i, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current_page_item > a, body header#top nav .sf-menu > li.current_page_item > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu > li.current_page_ancestor > a .sf-sub-indicator [class^="icon-"], body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu > li.current-menu-ancestor > a, body .sf-menu > li.sfHover > a .sf-sub-indicator [class^="icon-"], body .sf-menu > li:hover > a .sf-sub-indicator [class^="icon-"], body .sf-menu > li:hover > a, header#top nav ul #search-btn a:hover span, header#top nav ul .slide-out-widget-area-toggle a:hover span, body:not(.material) #search-outer #search #close a span:hover {
+    color: #141415!important;
+}
+
+
+#footer-outer .row {
+    padding: 0px 0px;
+   
+}
+
+
+
+body[data-hhun="1"]:not(.no-scroll) #header-outer[data-permanent-transparent="false"][data-using-secondary="1"]:not(.detached):not(.parallax-contained):not(.at-top-before-box) {
+    top: 0px!important;
+}
+
+
+
+#header-outer[data-full-width="true"] header >.container, #header-secondary-outer[data-full-width="true"] >.container {
+    width: 100%;
+    max-width: 92%;
+    padding: 0 28px;
+}
+
+.ascend .container-wrap, .ascend .project-title, body .vc_text_separator div, .carousel-wrap[data-full-width="true"] .carousel-heading, .carousel-wrap span.left-border, .carousel-wrap span.right-border, #page-header-wrap, .page-header-no-bg, #full_width_portfolio .project-title.parallax-effect, .portfolio-items .col, .page-template-template-portfolio-php .portfolio-items .col.span_3, .page-template-template-portfolio-php .portfolio-items .col.span_4 {
+    background-color:white;
+}
+
+#header-outer[data-box-shadow="small"] {
+     box-shadow:none; 
+   
+}
+
+.ascend #header-outer[data-full-width="true"] header#top nav ul #search-btn a, .ascend #header-outer[data-full-width="true"] header#top nav ul .slide-out-widget-area-toggle a {
+    border-left:none;
+}
+
+#search-outer .ui-widget-content li:hover a .title, #search-outer .ui-widget-content .ui-state-hover .title, #search-outer .ui-widget-content .ui-state-focus .title, #search-outer .ui-widget-content li:hover a, #search-outer .ui-widget-content li:hover i, #search-outer .ui-widget-content .ui-state-hover a, #search-outer .ui-widget-content .ui-state-focus a, #search-outer .ui-widget-content .ui-state-hover i, #search-outer .ui-widget-content .ui-state-focus i, #search-outer .ui-widget-content .ui-state-hover span, #search-outer .ui-widget-content .ui-state-focus span, body header#top nav .sf-menu ul li.sfHover > a, header#top nav > ul > li.megamenu > ul ul li.current-menu-item > a, body[data-dropdown-style="minimal"].material #header-outer:not([data-format="left-header"]) header#top nav ul.cart_list > li:hover a, body #header-outer .widget_shopping_cart .cart_list li:hover a, #header-secondary-outer ul ul li:hover > a, body #header-secondary-outer ul ul li:hover > a i, body header#top nav .sf-menu ul li.sfHover > a .sf-sub-indicator i, #header-outer .widget_shopping_cart li:hover .quantity, body header#top nav .sf-menu ul li:hover > a .sf-sub-indicator i, body header#top nav .sf-menu ul li:hover > a, header#top nav > ul > li.megamenu > ul > li > a:hover, header#top nav > ul > li.megamenu > ul > li.sfHover > a, body header#top nav .sf-menu ul li.current-menu-item > a, body #header-outer:not([data-lhe="animated_underline"]) header#top nav .sf-menu ul li.current-menu-item > a, body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator i, body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator i, body header#top nav .sf-menu ul li.sfHover > a, #header-secondary-outer ul li.sfHover > a, body header#top nav .sf-menu ul li.current_page_ancestor > a, body header#top nav .sf-menu ul li.current-menu-ancestor > a, body header#top nav .sf-menu ul li.current_page_item > a, body header#top nav .sf-menu ul li.current_page_item > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu ul li.current_page_ancestor > a .sf-sub-indicator [class^="icon-"], body header#top nav .sf-menu ul li.current-menu-ancestor > a, body header#top nav .sf-menu ul li.current_page_item > a, body .sf-menu ul li ul li.sfHover > a .sf-sub-indicator [class^="icon-"], body ul.sf-menu > li > a:active > .sf-sub-indicator i, body ul.sf-menu > li.sfHover > a > .sf-sub-indicator i, body .sf-menu ul li.current_page_item > a, body .sf-menu ul li.current-menu-ancestor > a, body .sf-menu ul li.current_page_ancestor > a, body .sf-menu ul a:focus, body .sf-menu ul a:hover, body .sf-menu ul a:active, body .sf-menu ul li:hover > a, body .sf-menu ul li.sfHover > a, .body sf-menu li ul li a:hover, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) li.sfHover > a, body .sf-menu li ul li.sfHover > a, body header#top nav > ul > li.megamenu ul li:hover > a, body[data-dropdown-style="minimal"] #header-outer header#top nav > ul > li:not(.megamenu) ul a:hover, body[data-dropdown-style="minimal"] #header-outer header#top nav > ul > li:not(.megamenu) li.sfHover > a, body[data-dropdown-style="minimal"] #header-outer header#top nav ul li li.sfHover > a .sf-sub-indicator [class^="icon-"], body[data-dropdown-style="minimal"] header#top nav > ul > li.megamenu > ul ul li a:hover, body[data-dropdown-style="minimal"] header#top nav > ul > li.megamenu > ul ul li.sfHover > a, body[data-dropdown-style="minimal"] #header-outer header#top nav ul li li:hover > a .sf-sub-indicator [class^="icon-"], body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul a:hover, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul ul li.current-menu-item > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) li.current-menu-item > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-item > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a .sf-sub-indicator [class^="icon-"], body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li.megamenu ul ul li.current-menu-item > a, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li > ul > li.has-ul > a:hover, body:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li:hover > a, body:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li > ul > li.has-ul:hover > a, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li:hover > a, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul > li > ul > li.has-ul:hover > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li.megamenu ul ul li.current-menu-item.has-ul > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li.megamenu ul ul li.current-menu-ancestor.has-ul > a {
+    color: #ffffff!important;
+}
+header#top .sf-menu li ul li a:hover, body header#top nav .sf-menu ul li.sfHover > a, header#top .sf-menu li ul li.current-menu-item > a, header#top .sf-menu li ul li.current-menu-ancestor > a, header#top nav > ul > li.megamenu > ul ul li a:hover, header#top nav > ul > li.megamenu > ul ul li.current-menu-item > a, #header-secondary-outer ul ul li a:hover, body #header-secondary-outer .sf-menu ul li.sfHover > a, #header-outer .widget_shopping_cart .cart_list li:hover, #header-outer .widget_shopping_cart .cart_list li:hover a, #search-outer .ui-widget-content li:hover, .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, body[data-dropdown-style="minimal"] #header-outer header#top nav > ul > li:not(.megamenu) ul a:hover, body[data-dropdown-style="minimal"] #header-outer header#top nav > ul > li:not(.megamenu) li.sfHover > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) li.sfHover > a, body[data-dropdown-style="minimal"] header#top nav > ul > li.megamenu > ul ul li a:hover, body[data-dropdown-style="minimal"] header#top nav > ul > li.megamenu > ul ul li.sfHover > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul a:hover, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top nav > ul > li.megamenu > ul ul li.current-menu-item > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-item > a, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul li.current-menu-ancestor > a {
+    background-color: #af9548!important;
+}
+
+
+
+
+#search-outer .ui-widget-content, header#top .sf-menu li ul li a, body[data-dropdown-style="minimal"]:not([data-header-format="left-header"]) header#top .sf-menu li ul, header#top nav > ul > li.megamenu > ul.sub-menu, body header#top nav > ul > li.megamenu > ul.sub-menu > li > a, #header-outer .widget_shopping_cart .cart_list a, #header-secondary-outer ul ul li a, #header-outer .widget_shopping_cart .cart_list li, .woocommerce .cart-notification, #header-outer .widget_shopping_cart_content {
+    background-color: #af9548!important;
+}
+.sf-menu li ul, .sf-menu li li ul {
+    box-shadow:none;
+}
+
+#search-outer .ui-widget-content li a, #search-outer .ui-widget-content i, header#top .sf-menu li ul li a, body #header-outer .widget_shopping_cart .cart_list a, #header-secondary-outer ul ul li a, .woocommerce .cart-notification .item-name, .cart-outer .cart-notification, .sf-menu li ul .sf-sub-indicator [class^="icon-"], .sf-menu li ul .sf-sub-indicator [class*=" icon-"], #header-outer .widget_shopping_cart .quantity, body[data-dropdown-style="minimal"] #header-outer:not([data-format="left-header"]) header#top nav > ul > li:not(.megamenu) ul a {
+    color: #ffffff!important;
+}
+
+
+@media only screen and (max-width: 1000px) and (min-width: 1px){
+#footer-widgets .container .col {
+    margin-bottom: -40px;
+    text-align: center!important;
+}}
+
+#header-secondary-outer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 10000;
+    background-color: transparent!important;
+    border-bottom: 1px solid #ddd;
+}
+.page-header-bg-image {
+        background-position:top!important;
+}
+
+.ra {
+    padding-top:22px;
+}
+
+
+
+
+.sf-menu ul {
+    top: 68px!important;
+    display: none;
+    padding: 2px 5px;
+}
+
+.ascend #header-outer .sf-menu ul li a {
+    border-bottom: 1px solid white;
+    padding: 4px 8px;
+}
+
+
+
+
+
+.sf-menu ul {
+    padding-bottom: 13px!important;
+    padding-top: 9px;
+    position: absolute;
+    top: -999em;
+    width: 20em;
+    border-radius: 8px;
+    background: #af9548;
+    padding: 11px;
+}
+  
+  #slide-out-widget-area, body.material #slide-out-widget-area.slide-out-from-right .off-canvas-social-links a:hover i:before, #slide-out-widget-area a, body #slide-out-widget-area a.slide_out_area_close .icon-default-style[class^="icon-"] {
+    color: #ffff !important;
+}
+
+#gg {
+    color:white!important;
+}
+#header-secondary-outer nav > ul > li > a, body #header-secondary-outer nav > ul > li > a span.sf-sub-indicator [class^="icon-"], #header-secondary-outer #social li a i, #header-secondary-outer[data-lhe="animated_underline"] nav >ul.sf-menu >li:hover >a {
+    color: white!important;
+}
+
+#header-secondary-outer #social i {
+    height: 16px!important;
+    line-height: 14px!important;
+    font-size: 26px!important;
+    color: white!important;
+}
+
+.fa-phone:before {
+    content: "\f095";
+      color:white!important;
+}
+
+
+ .nav {
+  
+  list-style-type: none;
+ 
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+.nav li {
+  display: inline-block;
+ font-size:25px;
+  padding: 10px;
+  color:white;
+}
+
+
+.sf-menu ul {
+    padding-bottom: 6px!important;
+    position: absolute;
+    top: -999em;
+    width: 19em;
+    border-radius: 10px;
+    padding-top: 11px;
+}
+
+
+
+header#top nav > ul > li > a, body.material #search-outer #search input[type="text"] {
+    font-family: Roboto;
+    font-size: 18px!important;
+    line-height: 19.6px;
+    font-weight: normal;
+}
+
+.a :hover{
+    color:blue;
+}
+
+
+
+
+
+.tp-caption {
+    display:none;
+}
+
+
+
+
+
+@media only screen and (min-width: 320px){
+body #slide-out-widget-area.fullscreen .inner .off-canvas-menu-container li a, body #slide-out-widget-area.fullscreen-alt .inner .off-canvas-menu-container li a {
+    font-size: 12px!important;
+    line-height: 11.8px!important;
+}
+    
+}
+
+
+
+
+#footer-outer .widget {
+     margin-bottom: 25px;
+     margin-top:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<h2>Vertical Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Human rights')" id="defaultOpen">Human rights</button>
+  <button class="tablinks" onclick="openCity(event, 'Home for Destitute Children')">Home for Destitute Children</button>
+  <button class="tablinks" onclick="openCity(event, 'Family Counselling Center')">Family Counselling Center</button>
+</div>
+
+
+<div id="Human rights" class="tabcontent">
+    <h2 style="font-weight: bold; font-size: 52px;"><span style="color: #b71506;">Human</span> Rights</h2>
+    <p style="color: black; font-size: 18px; text-align: justify; padding-top: 20px;">
+      <img src="http://xmedia.co.in/baskaran/wp-content/uploads/2019/05/Human-side-image.png"  alt="human rights">Human rights are rights inhere to all human beings,regardless of race, sex, nationality, ethnicity, language, religion any other status.Human rights include the right to life and liberty,freedom from slavery and torture,freedom of opinion and expression,the right to work and education and many more. Everyone is entitled to these rights without discrimination. Baskaran foundation will protect and promote human rights and fundamental freedoms of individuals or groups.</p>
+
+      
+</div>
+
+<div id="Home for Destitute Children" class="tabcontent">
+  <h2 style="font-weight: bold; font-size: 52px;text-align:center;"><span style="color: #b71506;">Home for Destitute</span> Children</h2>
+<p style="color: black; font-size: 18px; text-align: justify; padding-top: 16px;">
+  <img src="http://xmedia.co.in/baskaran/wp-content/uploads/2019/05/Home-for-Destitute-Children-side-image.png" alt="Home for Destitute Children">Baskaran foundation is a non-profit,non-government,voluntary organization committed to the care of children.The aim &amp; objective of the foundation is to provide family home to the destitute,orphaned,neglected,socially handicapped,children by giving them a family,home and strong foundation for an independent and secure life.Our Organization has always responded to the call of needy children arising out of emergency-whether natural or man-made. The association would care for children,many of whom they found on the streets,providing a home and preparing them for lives of dutiful and meaningful work.They built a smaller facility due to foster care and also had on site,group of cottages with an adult supervisor,these cottages being a real home with living room,dining room and bedrooms.</p>p> 
+</div>
+
+<div id="Family Counselling Center" class="tabcontent">
+  <h2 style="font-weight: bold; font-size: 52px;text-align:center;"><span style="color: #b71506;">Family Counselling</span> Center</h2>
+<p style="color: black; padding-top: 20px; font-size: 18px; text-align: justify;">
+  <img src="http://xmedia.co.in/baskaran/wp-content/uploads/2019/05/Women-in-Development-side-image.png" style="float:left"
+   alt="women in development">The Family Counselling Center is functioning in Baskaran Foundation, It aims to help and empower individuals by assisting them through the legal system where cases regarding divorce,maintenance and property dispute are handled. FCC facilitates favorable environment for women,men and children to improve their family and home life.The family counselling center accepts the individuals and families dealing with issues ranging from spousal problems,greater family,disharmony or parent and child tensions. Counselors work to find sustainable solutions that satisfy the mental and emotional needs of all individuals or family members involved in the counselling process. The FCC offers job placements for destitute women,offering housemaid jobs,tailoring jobs in export companies and office jobs. Women in distress are provided with temporary shelter when needed. Baskaran foundation also works in collaboration with the police matters concerning marital problems,dowry harassment and domestic violence.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+</html> 
+
+
+-------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <style type="text/css">
+    .bs-example{
+    	margin: 20px;
+    }
+</style> -->
+</head>
+<body>
+<div class="panel-group" id="accordion1">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/human-rights/" onclick="goto(0)">Human rights</a>
+                    </h4>
+                </div>
+                <div id="#epc1" class="panel-collapse collapse in">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/home-for-destitute/" onclick="goto(1)">Home for Destitute Children</a>
+                    </h4>
+                </div>
+                <div id="#epc2" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/family-counselling/" onclick="goto(1)">Family Counselling Center</a>
+                    </h4>
+                </div>
+                <div id="#epc3" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/free-legal-aid/" onclick="goto(3)">Free Legal Aid</a>
+                    </h4>
+                </div>
+                <div id="#epc4" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/senior-citizens-home/" onclick="goto(4)">Senior Citizens Home</a>
+                    </h4>
+                </div>
+                <div id="#epc5" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/prevention-of-human-trafficking/" onclick="goto(5)">Prevention of Human Trafficking</a>
+                    </h4>
+                </div>
+                <div id="#epc6" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="http://xmedia.co.in/baskaran/self-help-group/" onclick="goto(6)">Self-Help Groups</a>
+                    </h4>
+                </div>
+                <div id="epc7" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                        <div class="panel-group" id="accordion2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="http://xmedia.co.in/baskaran/eudcation-for-poor-children/" onclick="goto(7)">
+                                          Education for Poor Children</a>
+                                    </h4>
+                                </div>
+															<div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion2" href="http://xmedia.co.in/baskaran/medical-care/"  onclick="goto(9)">Medical Care</a>
+                                    </h4>
+                                </div>
+														
+															<div class="panel-heading">
+                                    <h4 class="panel-title">
+																			<a data-toggle="collapse" data-parent="#accordion2" href="http://xmedia.co.in/baskaran/women-in-development" onclick="goto(8)">Women in Development </a>
+                                    </h4>
+                                </div>
+																<div class="panel-heading">
+                                    <h4 class="panel-title">
+																			<a data-toggle="collapse" data-parent="#accordion2" href="#epc14"  onclick="goto(10)">Digital project Delivery </a>
+                                    </h4>
+                                </div>
+                                
+                            </div>
+                            <div class="panel panel-default">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#epc8" onclick="goto(11)">Optimized Solutions</a>
+                    </h4>
+                </div>
+                <div id="#epc8" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#epc9" onclick="goto(12)">Engineering execution</a>
+                    </h4>
+                </div>
+                <div id="#epc9" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#epc10" onclick="goto(13)">Procurement Support</a>
+                    </h4>
+                </div>
+                <div id="#epc10" class="panel-collapse collapse">
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion1" href="#epc11" onclick="goto(14)">Construction Management</a>
+                    </h4>
+                </div>
+                <div id="#epc11" class="panel-collapse collapse">
+                </div>
+            </div>
+
+        </div>
+
+</body>
+</html>
+
+
+
+  

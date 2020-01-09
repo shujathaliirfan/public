@@ -1,0 +1,73 @@
+https://raw.githubusercontent.com/supahfunk/supah-codepen/master/canyon-1.jpg
+
+
+=========================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 
+<style>
+	img {
+    display: block;
+    margin: 0 auto;
+}
+	
+	</style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-4">
+		<figure>
+  <img src="https://organicchemistryindia.com/wp-content/uploads/2019/07/map.png" alt="Trulli" class="mx-auto d-block">
+  <figcaption >No:125B, MTH Road,Ambattur,Chennai 600053</figcaption>
+</figure>
+		
+		
+		
+		</div>
+    <div class="col-sm-4" >
+			
+<figure>
+  <img src="https://organicchemistryindia.com/wp-content/uploads/2019/07/mobile.png" alt="Trulli" class="mx-auto d-block">
+  <figcaption class="text-center">+91 8778997750</figcaption>
+</figure>
+			
+			</div>
+		
+    <div class="col-sm-4" >
+		
+		<figure>
+  <img src="https://organicchemistryindia.com/wp-content/uploads/2019/07/mail.png" alt="Trulli" class="mx-auto d-block">
+  <figcaption class="text-center">admin@organicchemistryindia.com</figcaption>
+</figure>
+		
+		
+		</div>
+   
+  </div>
+	<hr>
+  <div class="row justify-content-center">
+    <div>
+		
+
+<img style=" margin-bottom: 0px;" class="mx-auto d-block" src="https://organicchemistryindia.com/wp-content/uploads/2019/08/oci-color-logo.png" alt="logo" /><a href="https://info.flagcounter.com/5XKC"><img src="https://s11.flagcounter.com/count2/5XKC/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+			<h2 style="text-align: center; font-size: 20px; font-color: #132e49; font-weight: bold;">
+				Simplified. Advanced.
+			</h2>
+<h5 style="text-align: center; font-size: 15px; font-color: #132e49; font-weight: bold;">2019 Organic chemistry India.All Rights Reserved.</h5>
+<p style="text-align: center; font-color: #132e49; margin-bottom: 0px;">Design &amp; Developed by:xmedia solution</p>
+			
+		</div>
+</div>
+	</div>
+	
+</body>
+</html>

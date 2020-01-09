@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+    width: 30%;
+    height: 300px;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.tab .tablinks2 {
+    border-left: 10px solid #ff920f;
+}
+.tab .tablinks1 {
+    border-left: 10px solid #f14134;
+}
+.tab .tablinks3 {
+    border-left: 10px solid #8dc145;
+}
+.tab .tablinks4 {
+    border-left: 10px solid #0d3ddb;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current "tab button" class */
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 52%;
+    border-left: none;
+    height: 300px;
+}
+
+
+/* Create an active/current "tab button" class */
+.active.tablinks.active.tablinks1:before{
+	content:'';
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 25px solid #f14134;
+    border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -8%;
+}
+button.tablinks1
+{
+	position:relative;
+}
+button.tablinks.active.tablinks3:before{
+	content:'';
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 25px solid #f14134;
+    border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -8%;
+}
+button.tablinks3
+{
+	position:relative;
+}
+button.tablinks.active.tablinks2:before{
+	content:'';
+	width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 25px solid yellow;
+    border-bottom: 10px solid transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -8%;
+}
+button.tablinks2
+{
+	position:relative;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="container">
+  <div class="row justify-content-center">
+<div id="London" class="tabcontent">
+  <img src="img2.png" alt="fdf">
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <img src="img2.png" alt="fdf">
+</div>
+<div class="tab">
+  <button class="tablinks1 tablinks" onclick="openCity(event, 'London')" id="defaultOpen">	<p><b>VibConnect</b></p>
+    <p>Connect anywhere with Anyone</p></button>
+  <button class="tablinks2 tablinks" onclick="openCity(event, 'Paris')">	<p><b>VibDial</b></p>
+    <p>Simplified call center software.</p></button>
+  <button class="tablinks3 tablinks" onclick="openCity(event, 'Tokyo')">	<p><b>VibCast</b></p>
+    <p>Broadcast Your Business.</p></button>
+  <button class="tablinks4 tablinks" onclick="openCity(event, 'Paris')">	<p><b>VibPBX</b></p>
+    <p>Hosted PBX for any Business.</p></button>
+</div>
+
+
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   </div>
+  </div>
+  
+</body>
+</html> 

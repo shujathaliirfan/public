@@ -1,0 +1,4 @@
+div:hover {
+    transform: rotate(1turn);
+    transition: all .4s ease;
+}

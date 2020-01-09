@@ -1,0 +1,71 @@
+<div class="loader" style="display: none;">
+            <div id="site-loader" style=""></div>
+        </div>
+
+
+$(window).load(function() {
+     $('.loader').fadeOut( "slow" );
+  });
+});
+
+====================================
+
+           
+// loader 
+$(window).load(function() {
+   
+ $("#loader").hide();
+ $("#loader").animate({
+     visibility: "hidden",
+  opacity:"0",
+  transition: "visibility 0s 2s opacity 2s linear",
+ },1000);
+     
+     
+ });
+ 
+//  console.log("window loaded");
+});
+ 
+
+
+
+<div class="loader" id="loader">
+    <img src="img/loader.gif">
+</div>
+
+
+
+
+
+
+
+
+
+====================================
+
+
+display:none;
+
+/*loader*/
+.loader{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    background-color: #fff;
+}
+#site-loader {
+    border: 16px solid #ececec;
+    box-shadow: 0px 0px 7px -3px #000;
+    border-radius: 50%;
+    border-top: 16px solid #236f88;
+    width: 101px;
+    height: 101px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}

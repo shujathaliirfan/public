@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  .carousel-item p:first-child:before {
+    content:  "\2013";
+     margin-right: 10px;
+}
+  
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform 1.6s ease-in-out;
+    transition: transform 1.6s ease-in-out,-webkit-transform 1.6s ease-in-out;
+}
+  </style>
+ 
+</head>
+<body>
+
+
+
+<div class="container bg-primary">
+    <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+                 <p>"First quote goes here."</p>
+                 <p style="color:#fcd000; font-size:14px;
+                  text-transform: uppercase; font-weight: bold; font-style:italic">First Last</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                
+                                 <p>"Second quote goes here."</p>
+                 <p style="color:#fcd000; font-size:14px; text-transform: uppercase; font-weight: bold;
+                  font-style:italic">First Last</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+<div class="container-fluid bg-info">
+    <div class="container made">
+      <h1>Real Testimonials From Real People</h1>
+      <p>Success stories</p>
+      <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-center m-auto">
+      
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>   
+        
+          <div class="carousel-inner">
+            <div class="item carousel-item active">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“We wanted my daughter to enjoy learning chemistry and to think of her career in chemistry or chemistry-relatedarea. In her first semester of chemistry class, she was doing well and she had confidence in her chemistry. But my daughter was having difficulties in her 2nd semester chemistry class. We could see that she was losing interest in chemistry and about to give it up. We wanted to find someone who can help her re-ignite her interest in chemistry.” </p>
+              <p class="overview"><b>Swetha Rao</b>,  Parents of Swetha Rao</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“Mr.Ramajayam is an approachable and caring professor. His thorough knowledge of the subject and simple ways to draw the focus of students is praise worthy.” </p>
+              <p class="overview"><b>Mr.Muthu</b>,  Parent,(Nungambakkam,Chennai)</p>
+            </div>
+            <div class="item carousel-item">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“Sir always punctual and effective with his teaching methods. He deepens your knowledge of chemistry whilst making it also fun and informative!” </p>
+              <p class="overview"><b>Aiyushu</b>,  Ambattur,Chennai</p>
+            </div>
+             <div class="item carousel-item">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“From what I know of Prof.Ramajayam, he has a deep understanding of the vast majority of chemistry as well as what information is relevant to different educational systems which I find to be particularly helpful. In addition to that,, he is effective at transferring such knowledge through diagrams and explanations.” </p>
+              <p class="overview"><b>Vignesh</b>,  Annanagar,Chennai</p>
+            </div>
+             <div class="item carousel-item">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“Ramajayam sir is a wonderful Organicchemistry tutor! He goes above and beyond to make sure you understand the material and is passionate about Chemistry. It was a great experience. I ll definetly recommend the sir to anyone.” </p>
+              <p class="overview"><b>Varshini</b>, Velachery, Chennai</p>
+            </div>
+             <div class="item carousel-item">
+              <div class="img-box"><img src="Avatar.png" alt=""></div>
+              <p class="testimonial">“Ramajayam sir is a genius! Very smart and am so grateful I found him before my final.” </p>
+              <p class="overview"><b>Michael Holz</b>, Online student , Singapore</p>
+            </div>
+          </div>
+        
+          <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</body>
+</html>

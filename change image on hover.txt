@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Change Image on Hover in CSS</title>
+<style type="text/css">
+    .card {
+        width: 130px;
+        height: 195px;
+        background: url("images/card-back.jpg") no-repeat;
+        display: inline-block;
+    }
+    .card:hover {
+        background: url("images/card-front.jpg") no-repeat;
+    }
+</style>
+</head>
+<body>
+    <div class="card"></div>
+</body>
+</html>
+-------------------------------------------------------------
+changing of image onclick
+
+
+<div class="button-container">
+<button class="black-button"></button>
+<button class="red-button"></button>
+<button class="blue-button"></button>
+<button class="yellow-button"></button>
+</div>
+
+<img id="change-image" src="/wp-content/uploads/2018/09/black.jpg" alt="Black Image" />
+
+jquery:-\\
+
+jQuery(document).ready(function($){
+
+$('.black-button').on({
+     'click': function(){
+         $('#change-image').attr('src','/wp-content/uploads/2018/09/black.jpg');
+     }
+ });
+ 
+$('.red-button').on({
+     'click': function(){
+         $('#change-image').attr('src','/wp-content/uploads/2018/09/red.jpg');
+     }
+ });
+ 
+$('.blue-button').on({
+     'click': function(){
+         $('#change-image').attr('src','/wp-content/uploads/2018/09/blue.jpg');
+     }
+ });
+ 
+$('.yellow-button').on({
+     'click': function(){
+         $('#change-image').attr('src','/wp-content/uploads/2018/09/yellow.jpg');
+     }
+ });
+});

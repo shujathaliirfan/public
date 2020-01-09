@@ -1,0 +1,21 @@
+
+.menu-item {
+position:relative;
+
+}
+
+
+
+
+.sub-menu:before 
+{
+	position: absolute;
+    content: "";
+    top: -7px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #ffffff;
+}

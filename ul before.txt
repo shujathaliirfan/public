@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+ul.me{
+list-style:none;
+}
+
+li {
+position:relative;
+}
+
+.me li:before {
+     content: '\f006';
+    font-family: 'FontAwesome';
+    color: #0074D9;
+    position: absolute;
+    left: -20px;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<ul class="me">
+  <li>Darth Maul</li>
+  <li>Luke Skywalker</li>
+  <li>General Grievous</li>
+  <li>Boba Fett</li>
+  <li>Leia Organa</li>
+</ul>
+
+</body>
+</html>
+
+
+============second style=======================
+
+ul.me{
+list-style:none;
+}
+
+li:before {
+  content: '\f006';
+  font-family: 'FontAwesome';
+  float: left;
+  margin-left: ;
+  color: #0074D9;
+  display:inline-block;
+}

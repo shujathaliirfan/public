@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $("body").addClass("test");
+    } else {
+      $("body").removeClass("test");
+    }
+  });
+});
+</script>
+<style>
+.test {
+  background-color: yellow;
+}
+</style>
+</head>
+<body style="height:1550px;">
+
+<p>Scroll down this page.</p>
+
+<p style="position:fixed;">When you have scrolled 50 pixels from the top, add the class "test" (yellow background color) to the paragraph. Scroll up again to remove the class.</p>
+
+</body>
+</html>

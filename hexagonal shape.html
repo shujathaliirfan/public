@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+  margin: 86.60px 0;
+  display:flex;
+  justify-content:center;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
+}
+
+h2 {
+width:50px;
+height:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+background-color:yellow;border-radius: 76px;
+}
+
+.tr {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -104px;
+    left: 125px;
+}
+
+
+p{
+  padding: 2%;
+    text-align: center;
+    color:white;
+    display: flex;
+    align-items: center;
+}
+
+}
+
+
+
+@media screen and (max-width:767px){
+.hexagon {
+    position: relative;
+    width: 210px;
+    height: 123.21px;
+    background-color: #64C7CC;
+    /* margin: 86.60px 0; */
+    margin: 0 auto;
+    margin-top: 86.6px;
+    margin-bottom: 86.6px;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 67.6px solid #64C7CC;
+
+
+
+}
+
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 67.6px solid #64C7CC;
+}
+.tr {
+    display: flex;
+    justify-content: center;
+position: absolute;
+    top: -90px;
+    left:78px;
+}
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="row mt-4">
+
+<div class="col-sm-6 ">
+<div class="hexagon">
+<p>ffff fghfhf</p>
+</div>
+</div>
+
+
+
+<div class="col-sm-6">
+<div class="hexagon">
+<div class="tr">
+<h2>4</h2>
+</div>
+<p>rtyryry tgthtg rtyryry tgthtg rtyryry tgthtg rtyryry tgthtg rtyryry tgthtg rtyryry tgthtg</p>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

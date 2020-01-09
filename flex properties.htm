@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.products {
+    background: lightgrey;
+    padding-top: 18px;
+}
+
+.row {
+  
+    display: flex;
+
+    flex-wrap:wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 23%;
+}
+
+
+.pro img {
+    width: 100%;
+    margin: auto;
+}
+
+.pro {
+    background: yellow;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-bottom: 16px;
+    padding: 10px;
+}
+
+#main {
+    max-width: 1024px;
+    width: 100%;
+    box-shadow: 0px 1px 6px 1px #f4f4f4;
+    margin: auto;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 680px) {
+	
+  html body  .row.products{
+      display:block !important;
+          margin: auto;
+    }
+    .products {
+      display:block !important;
+    }
+    .pro {
+      width:100%;
+      margin: auto !important;
+  }
+  .products .pro{
+    margin-bottom:20px !important;
+  }
+ 
+  
+  
+  
+   
+  
+  }
+
+</style>
+</head>
+<body>
+<h1>Flexible Boxes</h1>
+<div id="main">
+<div class="row products">
+	
+    <div class="col-md-3 pro"><img src="DEVISER-AE100A-High-Power-Optical-Power-Meter-25-to-43dBm.png"></div>
+        <div class="col-md-3 pro"><img src="FPM-302X-1-300x300 (1).png"></div>
+        <div class="col-md-3 pro"><img src="EXFO-FPM-602-Optical-Power-Meter-with-Results-Storage-10-to-60dBm.png"></div>
+        <div class="col-md-3 pro"><img src="EXFO-FPM-302-Optical-Power-Meter-10-to-60dBm.png"></div>
+        <div class="col-md-3 pro"><img src="VIAVIformerly-JDSU-OLP-35-Optical-Power-Meter-with-Results-Storage-10-to-65dBm (1).png"></div>
+        <div class="col-md-3 pro"><img src="HEIRUS-HPM-99-High-Power-Optical-Power-Meter-20-to-50dBm.png"></div>
+        <div class="col-md-3 pro"><img src="HEIRUS-HPM-111B-High-Power-Optical-Power-Meter-with-built-in-VFL-and-Results-Storage-26-to-50dBmComing-Soon.png"></div>
+        <div class="col-md-3 pro"><img src="DEVISER-AE120-High-Power-Optical-Power-Meter-25-to-43dBm.png"></div>
+    </div</div>
+</body>
+</html>

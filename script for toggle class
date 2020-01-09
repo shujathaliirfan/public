@@ -1,0 +1,16 @@
+jQuery("#wheel-img1").click(function(){  
+	   jQuery("#text-wheel2").removeClass('active');
+	   jQuery("#text-wheel3").removeClass('active');
+       jQuery("#text-wheel1").toggleClass("active");  
+
+});  
+jQuery("#wheel-img2").click(function(){  	   
+	   jQuery("#text-wheel1").removeClass('active');
+	   jQuery("#text-wheel3").removeClass('active'); 
+       jQuery("#text-wheel2").toggleClass("active"); 
+});  
+jQuery("#wheel-img3").click(function(){   
+       jQuery("#text-wheel1").removeClass("active"); 	   
+	   jQuery("#text-wheel2").removeClass('active');
+       jQuery("#text-wheel3").toggleClass("active"); 
+});

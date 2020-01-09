@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - Animate on Scroll Examples - Attributes</title>
+<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" />
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300'>
+<style>
+    body {
+  font-size: 1.2em;
+  font-family: 'Lato';
+  font-weight: 300;
+  text-align: center;
+}
+
+.box {
+  width: 40%;
+  height: 200px;
+  background: orange;
+  border-radius: 2px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.a {
+  margin: 60vh auto 0 auto;
+}
+
+.b {
+  margin: 40vh auto 0 auto;
+}
+  </style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+
+        <h1 data-aos="fade-right" data-aos-duration="3000" class="data-aos-easing"ease-in-sine">Design &amp; Technology that Transforms</h1>
+  
+
+
+
+
+<h1>AOS (Animation on Scroll)</h1>
+<h2>How to configure duration and easing</h2>
+<p>You need to scroll down to see the effect.</p>
+<div class="box a" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-quad">
+<h2>Animated using <code>fade-up</code>.</h2></div>
+<div class="box b" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-sine"><h2>Animated using <code>flip-down</code>.</h2></div>
+<div class="box b" data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic"><h2>Animated using <code>zoom-in</code>.</h2></div>
+
+>
+   
+
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+<script src='https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js'></script>
+<script id="rendered-js">
+      AOS.init();
+      //# sourceURL=pen.js
+    </script>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+</body>
+</html>

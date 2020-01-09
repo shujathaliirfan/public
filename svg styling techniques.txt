@@ -1,0 +1,407 @@
+<path class="moveUpDown" d="M163.426,299.237L128.249,278.927C127.647,278.58 127.722,
+277.973 128.417,277.572L163.257,257.458C163.951,257.056 165.002,257.012 165.604,
+257.36L200.781,277.67C201.383,278.017 201.308,278.624 200.613,279.025L165.774,
+299.139C165.079,299.541 164.028,299.585 163.426,299.237" style="fill:rgb(69,83,199);fill-rule:nonzero;"></path>
+
+<style>
+.moveUpDown {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 2s infinite reverse alternate;
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+</style>
+--------------------------------------------------------------------
+
+2) <path fill="#587BC9" d="M227.968,472.424c0-63.282,51.301-114.582,114.582-114.582c63.283,0,120.504,51.301,120.504,114.582    c0,63.283-57.221,114.582-120.504,114.582C279.269,587.006,227.968,535.706,227.968,472.424"></path>
+<style>
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+</style>
+
+-------------------------------------------------------
+3)<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+            <path class="intt" fill="none" stroke="#BFC1C3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" d="  M81.648,269.183l132.678,0.282l140.649,180.023l172.334-147.987l391.229-8.222L770.552,475.003l100.275-303.551l-159.811-18.429  L527.309,284.492L338.498,180.731l-218.875-28.878L81.648,269.183z"></path>
+            <g id="object" transform="matrix(0.650391,0,0,0.650391,-30,-13.0001)">
+              <g transform="matrix(0.828829,0,0,0.828829,87.6396,54.37)">
+                <path fill="#EAC5B0" d="M1060.488,634.16l1.071-18.41l7.886-0.396l2.06,12.589l3.754-1.914l-2.832,15.767l-8.216,1.515    L1060.488,634.16z"></path>
+                <path fill="#3B455A" d="M1163.283,707.039l-58.422-5.127l-28.779-68.982l-15.895,5.198l15.071,95.416l91.257,16.591    L1163.283,707.039z"></path>
+                <path fill="#B9916F" d="M327.432,598.335l-2.674-18.313l-7.918,0.293l-0.961,12.764l-3.921-1.585l4.207,15.516l8.345,0.798    L327.432,598.335z"></path>
+                <path fill="#3B455A" d="M212.993,688.285l84.112-16.42l14.629-73.398l16.345,3.812l-4.673,101.946l-83.932,28.023L212.993,688.285    z"></path>
+                <path fill="#3B455A" d="M561.929,1151.893c-1.803-1.984-3.902-3.065-6.277-2.69c-2.281,0.359-4.333,1.904-5.273,3.971    c-0.641,1.411-0.777,2.982-0.902,4.52c-0.659,7.96-0.6,26.857,10.002,29.58c4.458,1.141,8.143-2.025,9.333-6.024    C570.601,1175.221,567.949,1158.52,561.929,1151.893"></path>
+                <path fill="#EAC5B0" d="M565.699,1031.819l-0.556,48.547c0.647,21.565-2.719,43.25-2.074,64.817    c0.149,4.958,1.44,10.188,0.19,15.101c-1.221,4.81-5.127,5.659-9.138,3.225c-5.371-3.263-4.507-10.879-5.4-16.437    c-2.46-15.272-5.344-30.469-7.909-45.723c-1.259-7.476,1.335-17.957,0.77-25.525c0-0.002-7.844-40.685-7.844-40.685    L565.699,1031.819z"></path>
+                <path fill="#3B455A" d="M510.228,953.375l21.13,93.86l4.489,88.638l33.504-0.752l9.111-247.931l-64.95,1.178L510.228,953.375z"></path>
+                <path fill="#3B455A" d="M609.851,1150.131c-1.879-1.879-4.02-2.839-6.371-2.323c-2.257,0.493-4.235,2.159-5.085,4.284    c-0.578,1.449-0.647,3.031-0.708,4.578c-0.313,8.005,0.553,26.913,11.237,29.011c4.489,0.88,8.027-2.504,9.042-6.58    C619.494,1172.964,616.135,1156.408,609.851,1150.131"></path>
+
+
+
+
+<style>
+
+    
+.intt {
+        fill: none;
+        stroke: rgb(18, 79, 140);;
+    stroke-width: 1.5px;
+
+/* Stroke-dasharray property */
+    stroke-dasharray: 1353px;
+    stroke-dashoffset: 1353px;
+    animation: move 6s linear infinite;   
+/*     animation-fill-mode: forwards; */
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+</style>
+-----------------------------------------------------------
+
+for spinning 
+
+
+
+.vv {
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+   transform-origin: 50% 50%;
+   transform-box: fill-box;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+==================================================================================
+
+for outer rolling:
+in y axis
+
+
+
+
+
+.rolling
+{
+  animation-name: ro;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  transform-box:fill-box;
+
+ 
+}
+@keyframes ro {
+0%{transform: rotateY(0deg);}
+100%{transform: rotateY(360deg);}
+}
+------------------------------------------------------------
+Animation for bubbling 
+
+.float
+{
+	animation-name: updown;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-delay: 0.2s;
+}
+@keyframes updown
+{
+	0% { 
+        transform: scale(0.9);
+    
+    } 
+    15% { 
+        transform: scale(1.0);
+    
+    } 
+    25% { 
+        transform: scale(0.9);
+    
+    } 
+    35% { 
+        transform: scale(1.0);
+    
+    } 
+    50% { 
+        transform: scale(0.9);
+    
+    } 
+    65% { 
+        transform: scale(1.0);
+    
+    } 
+      75% { 
+        transform: scale(0.9);
+    
+    } 
+     100% { 
+        transform: scale(1.0);
+    
+    } 
+}
+----------------------------------------------------------------
+for dashstoke along with opacity
+
+
+.dasher
+{
+	animation-name: dash,desk;
+	animation-duration: 2s,2s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dash
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desk
+{
+	25%{opacity: 1}
+	55%{opacity: 1}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+
+
+.dasher1
+{
+	animation-name: dashe,deske;
+	animation-duration: 3s,3s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dashe
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes deske
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.dasher2
+{
+	animation-name: dasher,desker;
+	animation-duration: 6s,6s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dasher
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desker
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+
+.dasher3
+{
+	animation-name: dasheq,deskeq;
+	animation-duration: 12s,12s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	fill: white;
+animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dasheq
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes deskeq
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.bclour
+{
+	animation-name: kkl;
+	animation-duration: 12s;
+	animation-iteration-count: 1;
+	fill:url(#imgpattern);
+	animation-timing-function: ease-in-out;
+}
+@keyframes kkl
+{
+
+	0%{fill:url(#imgpattern);}
+	5%{fill:url(#imgpatter);}
+	50%{fill:url(#imgpatte); }
+	75%{fill:url(#imgpattern);}
+	100%{fill:url(#imgpatte);}
+}
+
+-------------------------------------------------------------------
+to add a image into the circle:-
+
+we hav to add under def tag the information about image then we have to apply the class inthe specific path
+
+
+<svg width="80%" height="80%" viewBox="0 0 1243 738" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+	  <defs>
+          <pattern id="imgpattern" x="0" y="0" width="1" height="1">
+            <image width="400px" height="400px" xlink:href="im-1.svg"></image>
+          </pattern>
+        </defs>
+         <defs>
+          <pattern id="imgpatter" x="0" y="0" width="1" height="1">
+            <image width="400px" height="400px" xlink:href="im-1.svg"></image>
+          </pattern>
+        </defs>
+         <defs>
+          <pattern id="imgpatte" x="0" y="0" width="1" height="1">
+            <image width="400px" height="400px" xlink:href="logo.jpg"></image>
+          </pattern>
+        </defs>
+
+
+
+
+
+.bclour
+{
+	animation-name: kkl;
+	animation-duration: 12s;
+	animation-iteration-count: 1;
+	fill:url(#imgpattern);
+	animation-timing-function: ease-in-out;
+}
+@keyframes kkl
+{
+
+	0%{fill:url(#imgpattern);}
+	5%{fill:url(#imgpatter);}
+	50%{fill:url(#imgpatte); }
+	75%{fill:url(#imgpattern);}
+	100%{fill:url(#imgpatte);}
+}
+
+
+-----------------------------------------------------
+for background-sliding:-
+
+
+
+.cust-satisfy{
+    background-image: url(https://websiteseoworks.com/vibtree/img/svg/city.svg);
+    background-repeat: repeat-x;
+   background-position: 100px 5px; /* for background positioning of the image */
+  -webkit-animation: slide 20s linear infinite;
+  animation: slide 20s linear infinite; /* its for sliding image */
+}
+@-webkit-keyframes slide {
+    from {background-position: 100% 100%; }
+    to { background-position: -400px  100%; }
+}
+
+-----------------------------------
+to change only the color:-
+
+.star-cus{
+    animation: mixcolor 3s linear infinite;
+}
+@keyframes  mixcolor{
+    from{
+        fill: yellow;
+    }
+    to{
+        fill: red;
+    }
+}
+--------------------------------------
+for fadeinup animation
+
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@ keyframes fadeInUp
+
+0% {
+    opacity: 0;
+    transform: translate3d(0,100%,0);
+}
+
+
+100% {
+    opacity: 1;
+    transform: none;
+}
+-------------------------------------------
+
+for moving clouds 
+
+.cloud {
+
+  animation-name:moves;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes moves {
+  0%{-webkit-transform: translateX(0px);}
+  
+  100% {-webkit-transform: translateX(300px);}
+}
+
+
+
+
+
+
+
+
+
+

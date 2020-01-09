@@ -1,0 +1,18 @@
+.f{
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1s;
+  animation-direction: normal; 
+
+
+
+
+}
+@keyframes example {
+  
+  from { left:0px; top:100px;}
+to  { left:0px; top:0px;}
+}

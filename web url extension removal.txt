@@ -1,0 +1,13 @@
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+
+create a file name called .htaccess in your project root directory
+
+then change th anchor tag <a href="sample.htm">home</a> to <a href="sample">home</a>
+
+==========for home page======
+<a href="/">home</a>

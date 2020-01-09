@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <style>
+
+* {
+  padding:0;
+  margin:0;
+}
+
+
+input[type=text] {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none!important;
+    font-size: 16px;
+    background-color: white;
+    background-image: url(icons8-search-24.png);
+    background-position: 11px 12px;
+    background-repeat: no-repeat;
+    padding: 12px 15px 7px 32px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+
+input[type=text]:focus {
+  background-image:none;
+   
+}
+
+
+/* chevron styling */
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color:white;
+    /* background: yellowgreen; */
+    background:blueviolet;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background:rgb(1, 58, 182);
+}
+#return-to-top:hover i {
+    color:  white;
+  /*  top: 5px;*/
+}
+
+  </style>
+  
+  
+ 
+
+</head>
+<body>
+        
+    
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+            
+                        </ul>
+                        <ul class="navbar-nav a">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Register</a>
+                            </li>
+                            <div>
+                              <form>
+                                <input type="text" name="search" placeholder="Search..">
+                              </form>
+                              
+                              
+                            
+                        </ul>
+                    </div>
+                </nav>
+       
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <h3>Column 1</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <h3>Column 1</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    <div class="col-sm-4">
+                      <h3>Column 1</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+
+
+
+
+            
+              
+            <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+            <script>
+            $(window).scroll(function() {
+              if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                  $('#return-to-top').fadeIn(200);    // Fade in the arrow
+              } else {
+                  $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+              }
+          });
+          $('#return-to-top').click(function() {      // When arrow is clicked
+              $('body,html').animate({
+                  scrollTop : 0                       // Scroll to top of body
+              }, 500);
+          });
+        </script>
+    </body>
+    </html>

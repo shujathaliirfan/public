@@ -1,0 +1,15 @@
+li:before {
+    content: '\25BA';
+    padding-right: 6px;
+    position: absolute;
+    left: 0;
+}
+
+
+
+li:before {
+    content: '\e9af' !important;
+    font-family: icomoon !important;
+    font-size: 50px;
+    color: rgba(221, 14, 28, 1);
+}

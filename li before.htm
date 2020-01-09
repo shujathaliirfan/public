@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+li {
+ 
+  list-style-type:none;
+}
+
+ li:before {
+    padding-right: 10px;
+    content: "\f04b";
+    position: relative;
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 12px;
+    top: 0px;
+    left: 0;
+}
+
+.loader-on {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+
+
+
+    <div class="se-pre-con" style="display: none;">
+        <div class="loader-on">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+
+<ul>
+
+<li>one</li>
+<li>second</li>
+<li>third</li>
+</ul>
+
+
+<script>
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+  jQuery(document).ready(function($) {  
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
+});
+
+</script>
+
+
+</body>
+</html>

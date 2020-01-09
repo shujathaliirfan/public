@@ -1,0 +1,12 @@
+.tabbed >ul li a.active-tab :after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 46px;
+    left: 47px;
+    color: #335d8f;
+}

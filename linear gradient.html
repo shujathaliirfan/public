@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <style>
+
+    
+.dasher
+{
+	animation-name: dash,desk;
+	animation-duration: 2s,2s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dash
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desk
+{
+	25%{opacity: 1}
+	55%{opacity: 1}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+
+  
+  
+.float
+{
+	animation-name: updown;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	animation-timing-function:ease-in-out;
+	animation-delay: 0.2s;
+}
+@keyframes updown
+{
+	0% { 
+        transform: scale(0.9);
+    
+    } 
+    15% { 
+        transform: scale(1.0);
+    
+    } 
+    25% { 
+        transform: scale(0.9);
+    
+    } 
+    35% { 
+        transform: scale(1.0);
+    
+    } 
+    50% { 
+        transform: scale(0.9);
+    
+    } 
+    65% { 
+        transform: scale(1.0);
+    
+    } 
+      75% { 
+        transform: scale(0.9);
+    
+    } 
+     100% { 
+        transform: scale(1.0);
+    
+    } 
+}
+
+
+.dasher
+{
+	animation-name: dash,desk;
+	animation-duration: 2s,2s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+	opacity: 1;
+	animation-iteration-count: 1;
+  animation-delay: 2s;
+	animation-timing-function: linear;
+}
+@keyframes dash
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desk
+{
+	25%{opacity: 1}
+	55%{opacity: 1}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.dasher
+{
+	animation-name: dash,desk;
+	animation-duration: 2s,2s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+  animation-delay: 5s;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dash
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desk
+{
+	25%{opacity: 1}
+	55%{opacity: 1}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.dasher1
+{
+	animation-name: dashe,deske;
+	animation-duration: 3s,3s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+  animation-delay: 4s;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dashe
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes deske
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.dasher2
+{
+	animation-name: dasher,desker;
+	animation-duration: 6s,6s;
+	stroke-dasharray: 100px;
+	stroke-dashoffset:100px;
+  animation-delay: 3s;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dasher
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes desker
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+
+.dasher3
+{
+	animation-name: dasheq,deskeq;
+	animation-duration: 12s,12s;
+	stroke-dasharray: 100px;
+  animation-delay: 10s;
+	stroke-dashoffset:100px;
+	fill: white;
+animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+@keyframes dasheq
+{
+	to{
+		stroke-dashoffset:0; 
+	}
+}
+@keyframes deskeq
+{
+	25%{opacity: 0}
+	55%{opacity: 0}
+	75%{opacity: 1}
+	100%{opacity: 1}
+}
+.bclour
+{
+	animation-name: kkl;
+	animation-duration: 12s;
+	animation-iteration-count: 1;
+  animation-delay: 1s;
+	fill:url(#imgpattern);
+	animation-timing-function: ease-in-out;
+}
+@keyframes kkl
+{
+
+	0%{fill:url(#imgpattern);}
+	5%{fill:url(#imgpatter);}
+	50%{fill:url(#imgpatte); }
+	75%{fill:url(#imgpattern);}
+	100%{fill:url(#imgpatte);}
+}
+
+.vibconnect {
+    background: linear-gradient(to right, yellow 59%, black 100%);
+}
+
+.vibconnect .col-md-7 {
+    background: linear-gradient(to right, white 5%, black 100%);
+}
+
+.col-md-5 {
+    border-top-left-radius: 44%;
+    border-bottom-left-radius: 44%;
+}
+
+</style>
+</head>
+<body>
+<br>
+<div class="vibconnect">
+<div class="container">
+    <div class="row">
+        <div class="col-md-7 bg-light" style="height:350px"></div>
+        <div class="col-md-5 bg-info" style="height:350px"></div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    width="100%" height="100%" viewBox="0 0 1243 738" version="1.1" xml:space="preserve"
+     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+     <defs>
+        <pattern id="imgpattern" x="0" y="0" width="1" height="1">
+          <image width="400px" height="400px" xlink:href="im-1.svg"></image>
+        </pattern>
+      </defs>
+       <defs>
+        <pattern id="imgpatter" x="0" y="0" width="1" height="1">
+          <image width="400px" height="400px" xlink:href="im-1.svg"></image>
+        </pattern>
+      </defs>
+       <defs>
+        <pattern id="imgpatte" x="0" y="0" width="1" height="1">
+          <image width="400px" height="400px" xlink:href="logo.jpg"></image>
+        </pattern>
+      </defs>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path class="dasher" d="M85.786,313.004L0,313.004L0,227.218C0,192.431 28.202,164.23 62.989,164.23L138.142,164.23C144.015,164.23 148.775,168.99 148.775,174.862L148.775,250.015C148.775,284.803 120.574,313.004 85.786,313.004" style="fill:rgb(242,242,242);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(242,242,242);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.92314,0,0,1.92314,308.855,22.9996)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:none;stroke:black;stroke-width:0.78px;stroke-dasharray:3.9,3.9,3.9,3.9;"/>
+      </g>
+      <g transform="matrix(1.92314,0,0,1.92314,308.855,22.9996)">
+          <path  class="dasher" d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:none;stroke:black;stroke-width:0.78px;stroke-dasharray:3.9,3.9,3.9,3.9;"/>
+      </g>
+      <g transform="matrix(1.92314,0,0,-1.92314,308.855,613.303)">
+          <path class="dasher1" d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:none;stroke:black;stroke-width:0.78px;stroke-dasharray:3.9,3.9,3.9,3.9;"/>
+      </g>
+      <g transform="matrix(-1.92314,0,0,1.92314,903.004,61.1857)">
+          <path  class="dasher2" d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:none;stroke:black;stroke-width:0.78px;stroke-dasharray:3.9,3.9,3.9,3.9;"/>
+      </g>
+      <g transform="matrix(-1.92314,0,0,-1.92314,903.004,716.117)">
+          <path class="dasher3" d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:none;stroke:black;stroke-width:0.78px;stroke-dasharray:3.9,3.9,3.9,3.9;"/>
+      </g>
+      <g transform="matrix(0.64913,-0.140574,0.140574,0.64913,138.751,73.0788)">
+          <path class="float" d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(194,114,214);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.722031,-0.19732,0.19732,0.722031,180.54,242.29)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(248,155,12);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.694449,0.195992,0.195992,-0.694449,138.751,477.284)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(93,200,243);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.694449,0.195992,0.195992,-0.694449,138.751,477.284)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(93,200,243);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.410751,0.455346,0.455346,-0.410751,32.2869,348.876)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(241,108,89);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.113936,0.602557,0.602557,-0.113936,22.9999,153.683)">
+          <path d="M85.786,0L0,0L0,85.786C0,120.574 28.202,148.776 62.989,148.776L138.142,148.776C144.015,148.776 148.775,144.015 148.775,138.142L148.775,62.989C148.775,28.202 120.574,0 85.786,0" style="fill:rgb(181,207,78);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(181,207,78);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.64913,-0.140574,0.140574,0.64913,138.751,73.0788)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(185,69,214);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.722031,-0.19732,0.19732,0.722031,180.54,242.29)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(237,89,78);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.694449,0.195992,0.195992,-0.694449,138.751,477.284)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(37,84,204);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.410751,0.455346,0.455346,-0.410751,32.2869,348.876)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(221,81,60);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.113936,0.602557,0.602557,-0.113936,22.9999,153.683)">
+          <path d="M0,55.915L0,85.786C0,120.574 28.201,148.776 62.989,148.776L138.142,148.776C144.014,148.776 148.775,144.015 148.775,138.142L148.775,118.904L62.989,118.904C28.201,118.904 0,90.703 0,55.915" style="fill:rgb(158,183,62);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path d="M229.473,20.639L315.259,20.639L315.259,106.425C315.259,141.213 287.058,169.414 252.27,169.414L177.118,169.414C171.244,169.414 166.484,164.654 166.484,158.781L166.484,83.628C166.484,48.84 194.685,20.639 229.473,20.639" style="fill:rgb(242,242,242);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path d="M315.26,76.554L315.26,106.425C315.26,141.213 287.059,169.414 252.271,169.414L177.118,169.414C171.245,169.414 166.485,164.654 166.485,158.781L166.485,139.543L252.271,139.543C287.059,139.543 315.26,111.342 315.26,76.554" style="fill:rgb(249,162,56);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1.85023,0,0,1.85023,314.279,28.4235)">
+          <path d="M0,257.09L0,227.218C0,192.431 28.201,164.23 62.989,164.23L138.142,164.23C144.014,164.23 148.775,168.99 148.775,174.862L148.775,194.101L62.989,194.101C28.201,194.101 0,222.302 0,257.09" style="fill:rgb(241,108,89);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1,0,0,1,-119.25,-854.642)">
+          <g>
+              <text x="485.491px" y="973.473px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">W<tspan x="501.986px " y="973.473px ">e</tspan> off<tspan x="540.45px " y="973.473px ">e</tspan>r application</text>
+              <text x="495.599px" y="998.054px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">customization for</text>
+              <text x="505.303px" y="1022.63px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">e<tspan x="515.229px 524.665px 534.712px 541.392px " y="1022.63px 1022.63px 1022.63px 1022.63px ">very</tspan> customer</text>
+              <text x="498.257px" y="1047.22px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">immaterial of the</text>
+              <text x="495.408px" y="1071.8px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">pur<tspan x="523.343px " y="1071.8px ">c</tspan>hase v<tspan x="588.794px " y="1071.8px ">o</tspan>lume.</text>
+          </g>
+      </g>
+      <g transform="matrix(1,0,0,1,186.31,-812.296)">
+          <g>
+              <text x="471.196px" y="973.473px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">Route all calls smoothly</text>
+              <text x="476.995px" y="998.054px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">to y<tspan x="508.5px " y="998.054px ">o</tspan>ur team members</text>
+              <text x="492.989px" y="1022.63px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">based on y<tspan x="585.475px " y="1022.63px ">o</tspan>ur own</text>
+              <text x="503.843px" y="1047.22px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">r<tspan x="510.17px " y="1047.22px ">o</tspan>uting strategy<tspan x="638.346px " y="1047.22px ">.</tspan></text>
+          </g>
+      </g>
+      <g transform="matrix(1,0,0,1,-112.018,-512.034)">
+          <g>
+              <text x="498.372px" y="973.473px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">High speed call</text>
+              <text x="504.37px" y="998.054px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">r<tspan x="510.707px " y="998.054px ">e</tspan>solution will</text>
+              <text x="488.719px" y="1022.63px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">maximiz<tspan x="560.916px " y="1022.63px ">e</tspan> each of</text>
+              <text x="512.265px" y="1047.22px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">y<tspan x="521.682px " y="1047.22px ">o</tspan>ur agent'<tspan x="605.66px " y="1047.22px ">s</tspan></text>
+              <text x="523.588px" y="1071.8px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">potential.</text>
+          </g>
+      </g>
+      <g transform="matrix(0.834278,0,0,0.834278,110.181,-825.172)">
+          <circle cx="1128" cy="1466" r="205" style="fill:none;stroke:rgb(26,26,26);stroke-width:1.8px;stroke-linecap:round;stroke-miterlimit:1.5;stroke-dasharray:8.99,8.99,8.99,8.99;"/>
+      </g>
+      <g transform="matrix(0.776952,0,0,0.776952,174.844,-741.133)">
+          <circle class="bclour" cx="1128" cy="1466" r="205" style="fill:white;"/>
+      </g>
+      <g transform="matrix(0.903979,0,0,0.903979,-303.089,-758.942)">
+          <path d="M987,1175C987,1175 1035.33,1363.94 1309,1265.48" style="fill:none;stroke:rgb(26,26,26);stroke-width:1.66px;stroke-linecap:round;stroke-miterlimit:1.5;stroke-dasharray:8.3,8.3,8.3,8.3;"/>
+      </g>
+      <g transform="matrix(1.77984,0,0,1.77984,627.548,436.595)">
+          <path d="M62.99,148.775L148.776,148.775L148.776,62.989C148.776,28.201 120.575,0 85.787,0L10.635,0C4.76,0 0.001,4.76 0.001,10.633L0.001,85.786C0.001,120.574 28.201,148.775 62.99,148.775" style="fill:rgb(242,242,242);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(1,0,0,1,179.495,-421.675)">
+          <g>
+              <text x="509.786px" y="973.473px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">Our user-friendly</text>
+              <text x="484.723px" y="998.054px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">application will lead to</text>
+              <text x="482.854px" y="1022.63px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">happ<tspan x="525.595px " y="1022.63px ">y</tspan> agents r<tspan x="609.527px " y="1022.63px ">e</tspan>sulting</text>
+              <text x="495.601px" y="1047.22px" style="font-family:'Roboto-Regular', 'Roboto';font-size:19px;">better per<tspan x="578.364px " y="1047.22px ">f</tspan>ormance.</text>
+          </g>
+      </g>
+      <g transform="matrix(1.77984,0,0,1.77984,627.548,436.595)">
+          <path d="M148.776,92.86L148.776,62.989C148.776,28.201 120.575,0 85.787,0L10.634,0C4.761,0 0.001,4.76 0.001,10.633L0.001,29.871L85.787,29.871C120.575,29.871 148.776,58.072 148.776,92.86" style="fill:rgb(74,158,189);fill-rule:nonzero;"/>
+      </g>
+      <g transform="matrix(0.79281,0,0,0.79281,-60.8148,-325.326)">
+          <text x="326.976px" y="773.94px" style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:31.926px;fill:white;">T<tspan x="343.923px 351.173px 366.42px 381.886px 397.507px 407.376px 414.626px 431.37px " y="773.94px 773.94px 773.94px 773.94px 773.94px 773.94px 773.94px 773.94px ">icketing</tspan></text>
+      </g>
+      <g transform="matrix(0.79281,0,0,0.79281,-199.918,-246.226)">
+          <text x="326.976px" y="773.94px" style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:31.926px;fill:white;">E<tspan x="344.032px 370.379px 386.249px 393.5px " y="773.94px 773.94px 773.94px 773.94px ">mail</tspan></text>
+      </g>
+      <g transform="matrix(0.79281,0,0,0.79281,-222.561,-410.406)">
+          <text x="326.976px" y="773.94px" style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:40px;fill:white;">S<tspan x="350.748px 384.05px " y="773.94px 773.94px ">MS</tspan></text>
+      </g>
+      <g transform="matrix(0.79281,0,0,0.79281,-87.4032,-492.909)">
+          <text x="326.976px" y="773.94px" style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:40px;fill:white;">I<tspan x="339.915px 366.564px " y="773.94px 773.94px ">VR</tspan></text>
+      </g>
+      <g transform="matrix(0.850265,0,0,0.850265,-109.277,-200.685)">
+          <text x="330.946px" y="773.94px" style="font-family:'Roboto-Bold', 'Roboto';font-weight:700;font-size:34.207px;fill:white;">C<tspan x="353.835px 374.17px 393.569px " y="773.94px 773.94px 773.94px ">hat</tspan></text>
+      </g>
+  </svg>
+
+
+</body>
+</html>
+
+

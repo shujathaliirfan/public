@@ -1,0 +1,11 @@
+.main-nav::before {
+    content: '';
+    position: absolute;
+    transform: skew(215deg);
+    width: 57%;
+    height: 122px;
+    background: linear-gradient(to right, #C70B0A, #f80000);
+    top: -10px;
+    right: 0px;
+    z-index: 0;
+}
