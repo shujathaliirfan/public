@@ -1,0 +1,29 @@
+ <script>
+ $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('html body').addClass('bb');
+    } else {
+      $('html body').removeClass('bb');
+    }
+  });
+
+
+</script>    
+
+
+============= both works ==============
+
+
+<script>
+  $(window).scroll(function() {
+
+    var scroll =$(window).scrollTop();
+     if (scroll > 100) {
+       $('html body').addClass('bb');
+     } else {
+       $('html body').removeClass('bb');
+     }
+   });
+ 
+ 
+ </script>
