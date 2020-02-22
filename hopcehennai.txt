@@ -1,0 +1,6 @@
+ database name : “xmediru0_hope-chennai”.
+
+     
+
+user : “xmediru0_hope”.
+password : Hope-chennai
