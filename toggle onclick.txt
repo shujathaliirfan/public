@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="jumbotron">
+   <p id="click_advance"><i class="icon-circle-arrow-down"></i> Advanced search</p>
+<div id="display_advance">
+    <p>This is the advance search</p>
+</div>      
+</div>
+<script>
+
+$('#click_advance').click(function() {
+    $('#display_advance').toggle('1000');
+    $("i", this).toggleClass("icon-circle-arrow-up icon-circle-arrow-down");
+});
+</script>
+
+</body>
+</html>

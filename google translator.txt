@@ -1,0 +1,46 @@
+<div id="google_translate_element" class="hed-translate"></div>
+
+
+
+=============================
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+=========style======
+
+
+
+.hed-translate{
+position: absolute;
+    right: 181px;
+    top: 2px;
+    z-index: 9999;
+
+}
+
+.goog-te-gadget {
+    font-family: arial;
+    font-size: 11px;
+    color: #6660!important;
+    white-space: nowrap;
+     display: block 
+}
+
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active {
+    font-size: 12px;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    display: none!important;
+}
+
+.hed-translate > div.goog-te-gadget {
+    line-height: 0px;
+}
