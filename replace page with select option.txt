@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get a time-based greeting:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<select id="mySelect">
+  <option>English</option>
+  <option>Tamil</option>
+  
+</select>
+
+<script>
+
+function myFunction() {
+
+  var x = document.getElementById("mySelect").selectedIndex;
+  if (x==0) {
+    location.replace("https://www.w3schools.com")
+  }  else {
+    location.replace("https://www.i18next.com/overview/getting-started")
+  }
+  
+}
+
+
+</script>
+
+
+
+<script>
+
+
+<script>
+
+var a = document.getElementById('country');
+a.addEventListener('change', myFunction);
+
+function myFunction() {
+  var x = document.getElementById("country").value;
+  if (x=="india") {
+    location.replace("https://www.w3schools.com")
+  }  else if (x=="Australia") {
+    location.replace("https://www.i18next.com/overview/getting-started")
+  }
+  else {
+  window.stop();
+  }
+  
+}
+
+
+
+
+</script>
+
+
+</script>
+
+</body>
+</html>
