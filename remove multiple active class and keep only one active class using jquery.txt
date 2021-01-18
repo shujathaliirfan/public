@@ -1,0 +1,8 @@
+
+ add jquery CDN in the header
+
+
+jQuery('.accordion-2 .panel-heading a[data-toggle="collapse"]').on('click', function () {   
+    jQuery('.accordion-2 .panel-heading a[data-toggle="collapse"]').removeClass('actives');
+    $(this).addClass('actives');
+ });

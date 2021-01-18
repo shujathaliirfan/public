@@ -1,0 +1,16 @@
+jQuery(document).ready(function(e){
+	jQuery('#shiftnav-toggle-main').hover(function(){
+// 		jQuery(this).parent().click();
+		jQuery('body').addClass('shiftnav-open');
+		jQuery('body').addClass('shiftnav-open-right');
+		jQuery('.shiftnav.shiftnav-shiftnav-main').addClass('shiftnav-open-target');  
+	});
+	
+});
+jQuery('.shiftnav').mouseleave(function(){
+	 setTimeout(function(){
+		jQuery('body').removeClass('shiftnav-open');
+		jQuery('body').removeClass('shiftnav-open-right');
+		jQuery('.shiftnav.shiftnav-shiftnav-main').removeClass('shiftnav-open-target');  
+	 },1000);
+});
