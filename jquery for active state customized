@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $( '.how_work_btn' ).each(function( index ) {
+       
+        let elClass = "how_work_btn" + (index + 1);
+        console.log(elClass )
+        $(this).attr('custom-class',elClass);
+    });
+    
+
+
+
+</script>
+
+<script>
+$('.how_work_btn').click(function(){
+        $('.how_cont').removeClass('active');
+        let cButton = $(this).attr('custom-class');
+        // console.log(cButton);
+        $('.' + cButton ).addClass('active');
+    });
+});
+
+</script>
+
+
+
+
+<style>
+
+.how_cont:not(.active){
+		display:none!important;
+	}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="how_work_btn" >one</div>
+<div class="how_work_btn" >two</div>
+<div class="how_work_btn" >three</div>
+
+
+<div class="how_cont" class="how_work_btn1 "> lorem ipsum </div>
+
+<div class="how_cont" class="how_work_btn2 "> lorem ipsum </div>
+
+<div class="how_cont" class="how_work_btn3"> lorem ipsum </div>
+
+</body>
+</html>
+
+
+======================================     explanation of the codes ==========================
+
+
+<style>
+
+.how_cont:not(.active){
+		display: none;
+	}
+
+
+</style>
+
+
+<script>
+
+jQuery(document).ready(function(){
+    
+       
+   
+    
+    jQuery( '.how_work_btn' ).each(function( index ) {
+       
+        let elClass = "how_work_btn" + (index + 1);
+        jQuery(this).attr('custom-class',elClass);
+    });
+
+    
+    
+    jQuery('.how_work_btn').click(function(){
+        jQuery('.how_cont').removeClass('active');
+        let cButton = jQuery(this).attr('custom-class');
+        jQuery('.' + cButton ).addClass('active');
+    });
+
+
+</script>  (Note : class which are to be already typed there is .how_work_btn , .how_cont , .how_work_btn1 , .how_work_btn2 , .how_work_btn3)
+
+
+<div class="how_work_btn"  class="how_work_btn1">one</div>
+<div class="how_work_btn"  class="how_work_btn2">two</div>
+<div class="how_work_btn"  class="how_work_btn3">three</div>
+
+=============content =====================
+
+<div class="how_cont" class="how_work_btn1 active "> lorem ipsum </div>
+
+<div class="how_cont" class="how_work_btn2  "> lorem ipsum </div>
+
+<div class="how_cont" class="how_work_btn3 "> lorem ipsum </div>
