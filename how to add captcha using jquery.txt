@@ -1,0 +1,40 @@
+<script>
+    $("#my_captcha_form").submit(function(event) {
+
+event.preventDefault(); // avoid to execute the actual submit of the form.
+
+var response = grecaptcha.getResponse();
+  if(response.length == 0) 
+  { 
+    //reCaptcha not verified
+    alert("please verify you are humann!"); 
+    event.preventDefault();
+    return false;
+  }
+
+var form = $(this);
+var url = form.attr('action');
+
+$.ajax({
+      type: "POST",
+    //   url: "http://quwwtechnologies.com/contact.php",
+      url: "http://integracl.co.uk/demo/contact.php",
+      data: form.serialize(),
+        // serializes the form's elements.
+      success: function(data) 
+      {
+          $('#my_captcha_form').addClass('hide-form');
+          $('#my_captcha_form').trigger("reset");
+          $('.succes-msg').addClass('show-msg');
+          
+      },
+          error: function (xhr, status, error) {
+                    alert(error.responseTextss);
+     }
+
+
+});
+
+});
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

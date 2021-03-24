@@ -1,0 +1,176 @@
+<?php
+session_start();
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+$name=$_POST['name'];
+$email=$_POST['email'];
+$contact_no=$_POST['contact_no'];
+$text_message=$_POST['text_message'];
+$expectations=$_POST['expectations'];
+
+
+    if(isset($_POST['name'])){
+      $name=$_POST['name'];
+    }
+    if(isset($_POST['email'])){
+      $email=$_POST['email'];
+    }
+    if(isset($_POST['text_message'])){
+      $text_message=$_POST['text_message'];
+    }
+    if(isset($_POST['contact_no'])){
+      $contact_no=$_POST['contact_no'];
+    }
+    if(isset($_POST['comment'])){
+      $email=$_POST['comment'];
+    }
+    if(isset($_POST['g-recaptcha-response'])){
+      $captcha=$_POST['g-recaptcha-response'];
+      //print_r($_POST['g-recaptcha-response']!="");exit();
+    }
+
+      
+    if($captcha!='') {
+
+        $message = '<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="m_5275377665128817231bodyTable" style="border-collapse:collapse;height:100%;margin:0;padding:0;width:100%;background-color:#e9eaec">
+                <tbody><tr>
+                    <td align="center" valign="top" id="m_5275377665128817231bodyCell" style="height:100%;margin:0;padding:50px 50px;width:100%">
+                       
+        
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="m_5275377665128817231templateContainer" style="border-collapse:collapse;border:0;max-width:600px!important">
+                                                    <tbody><tr>
+                                <td valign="top" id="m_5275377665128817231templateBody" style="background-color:#ffffff;border-top:0;border:1px solid #c1c1c1;padding-top:0;padding-bottom:0px">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="m_5275377665128817231mcnTextBlock" style="min-width:100%;border-collapse:collapse">
+                                        <tbody class="m_5275377665128817231mcnTextBlockOuter">
+                                            <tr>
+                                                <td valign="top" class="m_5275377665128817231mcnTextBlockInner">
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse" class="m_5275377665128817231mcnTextContentContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td valign="top" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px" class="m_5275377665128817231mcnTextContent">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="display:block;min-width:100%;border-collapse:collapse;width:100%">
+            <tbody>
+            <tr>
+            <td style="color:#333333;padding-top:20px;padding-bottom:3px"><strong>Name</strong></td>
+            </tr>
+            <tr>
+            <td style="color:#555555;padding-top:3px;padding-bottom:20px">'.$name.'</td>
+            </tr>
+            </tbody>
+            </table>
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top:1px solid #dddddd;display:block;min-width:100%;border-collapse:collapse;width:100%">
+            <tbody>
+            <tr>
+            <td style="color:#333333;padding-top:20px;padding-bottom:3px"><strong>Email</strong></td>
+            </tr>
+            <tr>
+            <td style="color:#555555;padding-top:3px;padding-bottom:20px">'.$email.'</td>
+            </tr>
+            </tbody>
+            </table><span class="im">
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top:1px solid #dddddd;display:block;min-width:100%;border-collapse:collapse;width:100%">
+            <tbody>
+            <tr>
+            <td style="color:#333333;padding-top:20px;padding-bottom:3px"><strong>Phone</strong></td>
+            </tr>
+            <tr>
+            <td style="color:#555555;padding-top:3px;padding-bottom:20px">'.$contact_no.'</td>
+            </tr>
+            </tbody>
+            </table>
+            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-top:1px solid #dddddd;display:block;min-width:100%;border-collapse:collapse;width:100%">
+                <tbody>
+                <tr>
+                <td style="color:#333333;padding-top:20px;padding-bottom:3px"><strong>Message</strong></td>
+                </tr>
+                <tr>
+                <td style="color:#555555;padding-top:3px;padding-bottom:20px text-align:justify;"><div style="text-align:justify;">'.$text_message.'</div></td>
+                </tr>
+                </tbody>
+                </table>
+        
+           
+                                                                </span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" id="m_5275377665128817231templateFooter" style="background-color:#e9eaec;border-top:0;border-bottom:0;padding-top:12px;padding-bottom:12px">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="m_5275377665128817231mcnTextBlock" style="min-width:100%;border-collapse:collapse">
+                                        <tbody class="m_5275377665128817231mcnTextBlockOuter">
+                                            <tr>
+                                                <td valign="top" class="m_5275377665128817231mcnTextBlockInner">
+                                                    <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width:100%;border-collapse:collapse" class="m_5275377665128817231mcnTextContentContainer">
+                                                        <tbody>
+                                                            <tr>
+                                                               
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                       
+        
+                        </td>
+                    </tr>
+                </tbody></table>';
+        
+                
+        $mail = new PHPMailer();
+        $mail->isSMTP();
+        // $mail->Mailer = "smtp";
+        // $mail->SMTPDebug  = 1; 
+        $mail->SMTPDebug = 0;
+        $mail->SMTPAuth   = true;
+        $mail->CharSet   = "UTF-8";
+        //  $mail->SMTPSecure = 'TLS';
+        $mail->Port       = "587";
+        $mail->Host       =  'us2.smtp.mailhostbox.com';   
+        $mail->Username   = 'xxxx';
+        $mail->Password   = 'xxx'; 
+        $mail->IsHTML(true);
+        $mail->AddAddress("contact@iwellsmc.com", "Drillersdesk");
+        $mail->SetFrom("support@drilersdesk.com", "Drillersdesk");
+        $mail->addCC('projects@asolution.com');
+        $mail->addBCC('ajithkumar@xasolution.com');
+        $mail->Subject = "Enquiry form from drillersdesk.com";
+        $mail->MsgHTML($message);
+        
+    if($mail->send())
+    {
+        $_SESSION['sucess']="Enquiry Submitted Successfully";
+           echo "<script>window.history.back()</script>";
+    }
+    else
+    {
+        // echo "<pre>";
+        // print_r($mail);
+        echo "<script>alert('Mail Enquiry Not Sended')</script>"; 
+         echo "<script>window.history.back()</script>";
+    }
+            
+ } 
+
+else {
+        echo "<script>alert('please verify recaptcha')</script>";
+        echo "<script>window.history.back()</script>";
+    }
+?>

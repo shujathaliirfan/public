@@ -1,0 +1,99 @@
+<script src="//www.google.com/recaptcha/api.js" async defer></script>
+
+<form id="ddform" class="ddcontact-form123 form" method="post" action="https://contact-form.php">
+  <div>
+    <div class="input-holder">
+        <label>Name</label>
+      <input type="text" id="name" class="validate" name="name" required />
+      <span id="name-error"></span>
+      <!--<p id="name-err"></p>-->
+    </div>
+    <div class="input-holder">
+        <label>Email ID</label>
+      <input type="email" id="mail" class="validate" name="email" required />
+      <span id="email-error"></span>
+            <!--<p id="name-err1"></p>-->
+
+    </div>
+    <div class="input-holder">
+        <label>Phone Number</label>
+      <input id="contact_no"   type="text" name="contact_no" />
+      <!--<span id="phone-error"></span>-->
+            <!--<p id="name-err2"></p>-->
+
+      <!--<span id="message"></span>-->
+      
+    </div>
+    <div class="input-holder">
+        <label>Message</label>
+      <textarea class="validate" id="text_message" required name="text_message"></textarea>
+      <span id="message-error"></span>
+            <!--<p id="name-err3"></p>-->
+
+    </div>
+    
+     <div name ="g-recaptcha" class="g-recaptcha" required data-sitekey="6Le-7V4aAAAAAPFeCADop1H0QrT275F7LS5rMbKk"></div>
+      
+   <input style="margin-top: 20px;" type="submit" value="Submit" id="submit" >
+  </div>
+  <div id= "my_flash_message" style="color:white;">
+      <?php
+      if(isset($_SESSION['sucess'])){
+          echo $_SESSION['sucess'];
+          unset($_SESSION['sucess']); 
+      }
+      ?>
+  </div>
+
+
+</form>
+
+<style>
+.captcha{
+        color: #f00;
+    }
+    .error{
+        color: #f00;
+    }
+    .success_mesg {
+        background-color: #4caf50eb;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 12px;
+        border-radius: 4px;
+    }
+    	textarea.error , input.error,.error[aria-invalid="true"]{
+	    border:1px solid red !important;
+	}
+	.ddcontact-form123 input:focus,.ddcontact-form123 textarea{
+	    outline:none;
+	}
+</style>
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+<!--<script src="<?php echo home_url();?>/custom-validate-mail.js"></script>-->
+<script>
+    jQuery(document).ready(function(){
+        jQuery(".form").trigger("reset");
+        jQuery("form").submit(function(e){
+        
+        var response = grecaptcha.getResponse();
+          if(response.length == 0) 
+          { 
+            //reCaptcha not verified
+            e.preventDefault();
+            alert("please verify you are humann!"); 
+            evt.preventDefault();
+            return false;
+          }
+
+        });
+    });
+     
+
+</script>
+<?php
+}
+add_shortcode( 'homebox', 'wpse_143641_homebox_shortcode' );
