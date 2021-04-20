@@ -1,0 +1,64 @@
+| Domain: questnace.com
+| Ip: 78.128.60.222
+| UserName: questnace
+| PassWord: QuesTim#%&53
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function(){
+	 inViewport();
+ });
+
+ $(window).resize(function(){
+	 inViewport();
+ });
+
+ function inViewport(){
+	 $('.navbar').each(function(){
+		 var divPos = $(this).offset().top,
+             topOfWindow = $(window).scrollTop();
+		 
+		 if( divPos < topOfWindow+400 ){
+			 $(this).addClass('hello');
+		 }
+         else {
+          $(this).removeClass('hello');
+          }
+	 });
+ }
+</script>
+</head>
+<body>
+
+<div class="navbar">dsfsda</div>
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p>
+<p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p>
+<p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p>
+<div class="navbar">dsfsda</div>
+<p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+<p>Click me away!</p>
+<p>Click me too!</p><p>Click me away!</p>
+<p>Click me too!</p>
+
+</body>
+</html>
