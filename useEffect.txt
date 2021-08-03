@@ -1,0 +1,133 @@
+export const getProfile = async (inputs) => {
+  return await axios.get(endpoints.account.GET_PROFILE_UNAUTHORIZED, {
+    headers: {
+      Authorization: getAuthToken(),
+    },
+  });
+};
+
+
+
+===========================================
+
+export const setAuthToken = (token) => {
+  return localStorage.setItem("token", token);
+};
+
+export const getAuthToken = () => {
+  return localStorage.getItem("token");
+};
+
+export const removeAuthToken = () => {
+  localStorage.removeItem("token");
+  return true;
+};
+
+export const logout = (next = false) => {
+  removeAuthToken();
+  if (next) {
+    window.location.href = "/?next=" + window.location.pathname;
+  } else {
+    window.location.href = "/";
+  }
+  return true;
+};
+==================================================
+@services/Auth
+
+export const validateToken = async (token) => {
+  let request = await axios.get(endpoints.auth.VALIDATE_TOKEN, {
+    headers: {
+      Authorization: "Bearer " + getAuthToken(),
+    },
+  });
+  return request;
+};
+
+
+
+
+
+===============================
+
+
+
+import React, { useState, useEffect, useContext, createContext } from "react";
+import * as AuthService from "@services/Auth";
+import { removeAuthToken, setAuthToken } from "@utils/Auth";
+import { useRouter } from "next/router";
+
+const authContext = createContext();
+
+// Provider component that wraps your app and makes auth object ...
+// ... available to any child component that calls useAuth().
+export function ProvideAuth({ children }) {
+  const auth = useProvideAuth();
+  return <authContext.Provider value={auth}>{children}</authContext.Provider>;
+}
+
+// Hook for child components to get the auth object ...
+// ... and re-render when it changes.
+export const useAuth = () => {
+  return useContext(authContext);
+};
+
+// Provider hook that creates auth object and handles state
+function useProvideAuth() {
+  const router = useRouter();
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const setUserData = async (inputs) => {
+    return new Promise(async (resolve, reject) => {
+      try {
+        setAuthToken(inputs.token);
+        setUser(inputs.userData);
+        resolve(inputs.user);
+      } catch (e) {
+        reject(e);
+      }
+    });
+  };
+
+  const signout = () => {
+    setUser(false);
+    removeAuthToken();
+    return true;
+  };
+
+  // Check if user signed in on mount
+  // Because this sets state in the callback it will cause any ...
+  // ... component that utilizes this hook to re-render with the ...
+  // ... latest auth object.
+  useEffect(async () => {
+    if (localStorage.getItem("token") !== null) {
+      try {
+        const { data } = await AuthService.validateToken();
+        console.log("getsdhdfghfghasdfasd", data);
+        if (data.status === "success") {
+          console.log(data.user);
+          setUser(data.user);
+        }
+        setLoading(false);
+        console.log(data.user);
+      } catch (e) {
+        if (localStorage.getItem("token") !== null) {
+          router.push("/");
+          setUser(false);
+          // setSessionExpire(true);
+          removeAuthToken();
+          setLoading(false);
+        }
+      }
+    }
+  }, []);
+
+  // Return the user object and auth methods
+  return {
+    user,
+    loading,
+    setUserData,
+    signout,
+  };
+}
